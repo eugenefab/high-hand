@@ -1,18 +1,11 @@
-from .deuces import Card, Evaluator, Deck
+from deuces import Card, Evaluator, Deck
 
 # create a card
-card = Card.new('Qh')
+card = Card.new("Qh")
 
 # create a board and hole cards
-board = [
-    Card.new('2h'),
-    Card.new('2s'),
-    Card.new('Jc')
-]
-hand = [
-    Card.new('Qs'),
-    Card.new('Th')
-]
+board = [Card.new("2h"), Card.new("2s"), Card.new("Jc")]
+hand = [Card.new("Qs"), Card.new("Th")]
 
 # pretty print cards to console
 Card.print_pretty_cards(board + hand)
